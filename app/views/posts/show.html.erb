@@ -1,0 +1,31 @@
+<p class="notice"><%= notice %></p>
+ 
+<p>
+  <b>Name:</b>
+  <%= @post.name %>
+</p>
+ 
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+ 
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+ 
+<h2>Comments</h2>
+<% @post.comments.each do |comment| %>
+    <%= render :partial => "comments/comment",
+               :collection => @post.comments %>
+ 
+<% end %>
+ 
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+ 
+<br />
+ 
+<%= link_to 'Edit Post', edit_post_path(@post) %> |
+<%= link_to 'Back to Posts', posts_path %> |
