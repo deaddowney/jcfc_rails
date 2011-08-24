@@ -1,12 +1,19 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc5'
-
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+# If running on JRuby, use the activerecord-jdbc-adapter
+platforms :jruby do
+  gem 'activerecord-jdbcsqlite3-adapter'
+  gem 'activerecord-jdbcmysql-adapter'
+  gem 'jruby-openssl'
+end
 
+platforms :ruby do
+  gem 'mysql2'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
