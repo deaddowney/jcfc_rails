@@ -5,6 +5,7 @@ gem 'rails', '3.1.0.rc5'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # If running on JRuby, use the activerecord-jdbc-adapter
+=begin
 platforms :jruby do
   gem 'activerecord-jdbc-adapter',
     :git => 'https://github.com/nicksieger/activerecord-jdbc-adapter.git'
@@ -14,6 +15,7 @@ platforms :jruby do
   gem 'therubyrhino'
   gem 'ruby-debug-ide', :git => 'https://github.com/JetBrains/ruby-debug-ide.git'
 end
+=end
 
 platforms :ruby do
   gem 'mysql2'
