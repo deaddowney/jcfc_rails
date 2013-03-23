@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @product_category.name %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @product_category.parent %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_category_path(@product_category) %> |
+<%= link_to 'Back', product_categories_path %>
