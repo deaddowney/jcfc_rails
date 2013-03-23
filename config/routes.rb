@@ -1,4 +1,7 @@
 JcfcRails::Application.routes.draw do
+  resources :product_categories
+
+
   resources :articles
 
   resources :posts do

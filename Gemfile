@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.11'
-gem 'sass'
+gem 'sass', :require => 'sass'
+gem 'coffee-script', :require => 'coffee-script'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
