@@ -1,5 +1,5 @@
 .bundle
-*.iml
+/*.iml
 db/*.sqlite3
 log/*.log
 tmp/
